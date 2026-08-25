@@ -55,7 +55,7 @@
 | Step | Actor Action | System Response |
 |------|--------------|-----------------|
 | 7a1 | — | System displays **Payment Failed** message with reason (e.g., "Insufficient funds", "Card expired", "Gateway timeout"). |
-| 7a2 | — | System **releases the 5-min soft hold** on the space; space becomes available to others immediately. |
+| 7a2 | — | System **releases the 5-min hold** on the space; space becomes available to others immediately. |
 | 7a3 | Vehicle Owner taps **"Try Another Payment Method"**. | System returns to **Step 5** (Payment Summary) with previous promo (if any) retained. |
 | 7a4 | Vehicle Owner selects a different payment method and confirms. | System retries **Process Payment** (UC-04). |
 | 7a5 | *If second attempt fails:* System shows **"Payment failed twice. Booking cancelled. Please try again later."** | Soft hold released; booking record **not created**; Vehicle Owner returned to Search screen (Step 2). |
