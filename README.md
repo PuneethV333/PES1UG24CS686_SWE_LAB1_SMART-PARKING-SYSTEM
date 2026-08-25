@@ -1,4 +1,4 @@
-# PES1UG24CS686_LAB1_SMART-PARKING-SYSTEM
+# PES1UG24CS686_SWE_LAB1_SMART-PARKING-SYSTEM
 
 **Lab 1: Requirements Engineering & UML Use-Case Modelling**  
 **Student:** Puneeth V (PES1UG24CS686)  
