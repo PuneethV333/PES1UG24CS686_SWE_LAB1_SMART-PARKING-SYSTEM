@@ -37,7 +37,7 @@
 ## How to View / Export
 
 - **Requirements Table:** Open `requirements/requirements_table.md` in any Markdown viewer, or import `requirements_table.csv` into Excel/Google Sheets.
-- **Use-Case Diagram:** Open `use-case-diagram/use_case_diagram.drawio` in [diagrams.net (draw.io)](https://app.diagrams.net/) → *File → Import From → Device* → select the `.drawio` file. Then *File → Export As → PDF* for submission.
+- **Use-Case Diagram:** Open `use-case-diagram/use_case_diagram.drawio` in [diagrams.net (draw.io)](https://app.diagrams.net/) → *File → Import From → Device* → select the `.drawio` file. Then *File → Export As → PDF (or PNG)* for submission.
 - **Use-Case Flow:** Open `use-case-flow/use_case_flow_uc03_book_parking_space.md` in any Markdown viewer; export to PDF via your editor (VS Code, Typora, etc.) or print to PDF.
 
 ---
