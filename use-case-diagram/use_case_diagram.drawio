@@ -1,0 +1,102 @@
+<mxfile host="app.diagrams.net" modified="2026-08-25T14:30:00.000Z" agent="5.0 (Windows)" etag="smart-parking-use-case" version="24.7.8" type="device">
+  <diagram name="Use Case Diagram" id="smart-parking-uc">
+    <mxGraphModel dx="1000" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <!-- System Boundary -->
+        <mxCell id="boundary" value="Smart Parking Space Rental & License Validator" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f5f5f5;strokeColor=#666666;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="200" y="80" width="800" height="600" as="geometry"/>
+        </mxCell>
+        <!-- Actor: Vehicle Owner -->
+        <mxCell id="actor-owner" value="Vehicle Owner" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="80" y="180" width="60" height="120" as="geometry"/>
+        </mxCell>
+        <!-- Actor: Parking Warden -->
+        <mxCell id="actor-warden" value="Parking Warden" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="80" y="450" width="60" height="120" as="geometry"/>
+        </mxCell>
+        <!-- Actor: Payment Gateway (secondary) -->
+        <mxCell id="actor-payment" value="Payment Gateway" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;strokeColor=#999999;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="200" width="60" height="120" as="geometry"/>
+        </mxCell>
+        <!-- UC-01: Register / Login -->
+        <mxCell id="uc-01" value="UC-01&#10;Register / Login" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#1a73e8;fillColor=#e8f0fe;fontSize=11;" vertex="1" parent="boundary">
+          <mxGeometry x="80" y="40" width="130" height="70" as="geometry"/>
+        </mxCell>
+        <!-- UC-02: Search Parking Spaces -->
+        <mxCell id="uc-02" value="UC-02&#10;Search Parking Spaces" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#1a73e8;fillColor=#e8f0fe;fontSize=11;" vertex="1" parent="boundary">
+          <mxGeometry x="250" y="40" width="130" height="70" as="geometry"/>
+        </mxCell>
+        <!-- UC-03: Book Parking Space -->
+        <mxCell id="uc-03" value="UC-03&#10;Book Parking Space" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#1a73e8;fillColor=#e8f0fe;fontSize=11;" vertex="1" parent="boundary">
+          <mxGeometry x="420" y="40" width="130" height="70" as="geometry"/>
+        </mxCell>
+        <!-- UC-04: Process Payment (included) -->
+        <mxCell id="uc-04" value="UC-04&#10;Process Payment" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#34a853;fillColor=#e6f4ea;fontSize=11;" vertex="1" parent="boundary">
+          <mxGeometry x="600" y="40" width="130" height="70" as="geometry"/>
+        </mxCell>
+        <!-- UC-05: Validate License & Check-in -->
+        <mxCell id="uc-05" value="UC-05&#10;Validate License & Check-in" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#1a73e8;fillColor=#e8f0fe;fontSize=11;" vertex="1" parent="boundary">
+          <mxGeometry x="420" y="300" width="130" height="70" as="geometry"/>
+        </mxCell>
+        <!-- UC-06: Extend / Cancel Booking -->
+        <mxCell id="uc-06" value="UC-06&#10;Extend / Cancel Booking" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#1a73e8;fillColor=#e8f0fe;fontSize=11;" vertex="1" parent="boundary">
+          <mxGeometry x="250" y="300" width="130" height="70" as="geometry"/>
+        </mxCell>
+        <!-- UC-07: View Booking History -->
+        <mxCell id="uc-07" value="UC-07&#10;View Booking History" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#1a73e8;fillColor=#e8f0fe;fontSize=11;" vertex="1" parent="boundary">
+          <mxGeometry x="80" y="300" width="130" height="70" as="geometry"/>
+        </mxCell>
+        <!-- UC-08: Report Violation (extends UC-05) -->
+        <mxCell id="uc-08" value="UC-08&#10;Report Violation" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#ea4335;fillColor=#fce8e6;fontSize=11;" vertex="1" parent="boundary">
+          <mxGeometry x="600" y="300" width="130" height="70" as="geometry"/>
+        </mxCell>
+        <!-- UC-09: Apply Promo Code (extends UC-03) -->
+        <mxCell id="uc-09" value="UC-09&#10;Apply Promo Code" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#fbbc04;fillColor=#fef7e0;fontSize=11;" vertex="1" parent="boundary">
+          <mxGeometry x="600" y="160" width="130" height="70" as="geometry"/>
+        </mxCell>
+        <!-- Association: Vehicle Owner -- UC-01 -->
+        <mxCell id="edge-owner-01" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#333333;fontSize=11;" edge="1" parent="1" source="actor-owner" target="uc-01">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- Association: Vehicle Owner -- UC-02 -->
+        <mxCell id="edge-owner-02" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#333333;fontSize=11;" edge="1" parent="1" source="actor-owner" target="uc-02">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- Association: Vehicle Owner -- UC-03 -->
+        <mxCell id="edge-owner-03" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#333333;fontSize=11;" edge="1" parent="1" source="actor-owner" target="uc-03">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- Association: Vehicle Owner -- UC-06 -->
+        <mxCell id="edge-owner-06" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#333333;fontSize=11;" edge="1" parent="1" source="actor-owner" target="uc-06">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- Association: Vehicle Owner -- UC-07 -->
+        <mxCell id="edge-owner-07" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#333333;fontSize=11;" edge="1" parent="1" source="actor-owner" target="uc-07">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- Association: Parking Warden -- UC-05 -->
+        <mxCell id="edge-warden-05" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#333333;fontSize=11;" edge="1" parent="1" source="actor-warden" target="uc-05">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- Association: UC-03 -- Payment Gateway -->
+        <mxCell id="edge-uc03-payment" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#999999;fontSize=11;dashed=1;" edge="1" parent="1" source="uc-03" target="actor-payment">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- Include: UC-03 --> UC-04 (Process Payment) -->
+        <mxCell id="include-uc03-uc04" value="&laquo;include&raquo;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;strokeColor=#34a853;fontSize=10;dashed=1;" edge="1" parent="1" source="uc-03" target="uc-04">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- Extend: UC-05 --> UC-08 (Report Violation) -->
+        <mxCell id="extend-uc05-uc08" value="&laquo;extend&raquo;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;strokeColor=#ea4335;fontSize=10;dashed=1;" edge="1" parent="1" source="uc-05" target="uc-08">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- Extend: UC-03 --> UC-09 (Apply Promo Code) -->
+        <mxCell id="extend-uc03-uc09" value="&laquo;extend&raquo;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;strokeColor=#fbbc04;fontSize=10;dashed=1;" edge="1" parent="1" source="uc-03" target="uc-09">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
