@@ -1,0 +1,27 @@
+************* Module radio_schedule
+radio_schedule.py:4:0: C0301: Line too long (118/100) (line-too-long)
+radio_schedule.py:11:0: C0301: Line too long (135/100) (line-too-long)
+radio_schedule.py:27:0: C0301: Line too long (110/100) (line-too-long)
+radio_schedule.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+radio_schedule.py:6:0: C0103: Constant name "booked_minutes" doesn't conform to UPPER_CASE naming style (invalid-name)
+radio_schedule.py:9:0: C0116: Missing function or method docstring (missing-function-docstring)
+radio_schedule.py:9:0: C0103: Function name "addSlot" doesn't conform to snake_case naming style (invalid-name)
+radio_schedule.py:10:4: W0603: Using the global statement (global-statement)
+radio_schedule.py:11:17: C0209: Formatting a regular string which could be an f-string (consider-using-f-string)
+radio_schedule.py:15:0: C0116: Missing function or method docstring (missing-function-docstring)
+radio_schedule.py:15:0: C0103: Function name "slotLabel" doesn't conform to snake_case naming style (invalid-name)
+radio_schedule.py:16:11: C0209: Formatting a regular string which could be an f-string (consider-using-f-string)
+radio_schedule.py:19:0: C0116: Missing function or method docstring (missing-function-docstring)
+radio_schedule.py:19:0: C0103: Function name "overlapFree" doesn't conform to snake_case naming style (invalid-name)
+radio_schedule.py:22:11: W0718: Catching too general exception Exception (broad-exception-caught)
+radio_schedule.py:21:15: W0123: Use of eval (eval-used)
+radio_schedule.py:26:0: C0116: Missing function or method docstring (missing-function-docstring)
+radio_schedule.py:26:0: C0103: Function name "morningShows" doesn't conform to snake_case naming style (invalid-name)
+radio_schedule.py:27:27: C0321: More than one statement on a single line (multiple-statements)
+radio_schedule.py:31:0: C0116: Missing function or method docstring (missing-function-docstring)
+radio_schedule.py:31:0: C0103: Function name "removeSlot" doesn't conform to snake_case naming style (invalid-name)
+radio_schedule.py:35:0: C0116: Missing function or method docstring (missing-function-docstring)
+
+-----------------------------------
+Your code has been rated at 2.41/10
+
